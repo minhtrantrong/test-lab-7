@@ -5,7 +5,7 @@
 	<body>
 		<?php 
 		
-			echo '<p>TEST POSTGRESQL DATABASE FOR LAB 7 </p>'; 
+			echo '<p>ATN POSTGRESQL DATABASE FOR LAB 7 </p>'; 
 			include("config.php");
 			# Connect to DATABASE
 			$pg_conn = pg_connect($conn_string);
