@@ -1,16 +1,26 @@
-<!DOCTYPE HTML>
-<html lang=“en”>
-<head>
-<meta charset=”UTF-8”>
-<title> Welcome to PHP for cloud app!</title>
-</head>
-<body>
-<?php
-	$hello = "Hello"; 
-	$name = "Cloud computing class";
-	$text = $hello." ".$name;
-	echo "<h1> $text </h1>";
-	
-?>
-</body>
+<html>
+	<head>
+		<title>PHP Test</title>
+	</head>
+	<body>
+		<?php 
+		
+			echo '<p>TEST POSTGRESQL DATABASE </p>'; 
+			include("config.php");
+			# Connect to DATABASE
+			$pg_conn = pg_connect($conn_string);
+			# Get data by query
+			$result = pg_query($pg_conn, "select * from product;");
+			#var_dump(pg_fetch_all($result));
+
+		?>
+		<?php
+			include("db_display.php");
+			display_table($result);
+			pg_close();
+		?>
+		
+
+	</body>
+
 </html>
