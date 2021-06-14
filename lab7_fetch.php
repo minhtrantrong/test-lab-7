@@ -5,7 +5,7 @@
 	<body>
 		<?php 
 		
-			echo '<p>TEST POSTGRESQL DATABASE </p>'; 
+			echo '<p>POSTGRESQL DATABASE </p>'; 
 			include("config.php");
 			# Connect to DATABASE
 			$pg_conn = pg_connect($conn_string);
