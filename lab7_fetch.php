@@ -13,8 +13,7 @@
 			$result = pg_query($pg_conn, "select * from product;");
 			#var_dump(pg_fetch_all($result));
 
-		?>
-		<?php
+		# merge 02 php tag
 			include("db_display.php");
 			display_table($result);
 			pg_close();
