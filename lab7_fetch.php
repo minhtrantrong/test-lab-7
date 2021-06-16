@@ -12,7 +12,7 @@
 			# Get data by query
 			$result = pg_query($pg_conn, "select * from product;");
 			#var_dump(pg_fetch_all($result));
-
+			# Test git
 		?>
 		<?php
 			include("db_display.php");
